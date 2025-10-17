@@ -20,7 +20,7 @@ jobs:
           username: ubuntu
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd /var/www/web1.com/public_html
+            cd /var/www/web2.com/public_html
             sudo git pull origin main
             sudo systemctl reload nginx
             sudo systemctl restart php8.1-fpm
